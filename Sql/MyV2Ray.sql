@@ -12,7 +12,7 @@ USE `MyV2Ray`;
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL,
-  `uuid` varchar(32) NOT NULL,
+  `uuid` varchar(36) NOT NULL,
   `t` int(11) NOT NULL DEFAULT '0',
   `u` bigint(20) NOT NULL,
   `d` bigint(20) NOT NULL,
