@@ -422,7 +422,7 @@ function V2raySocks_GenerateUuid(){
     $uuid .= substr($chars,12,4) . '-';  
     $uuid .= substr($chars,16,4) . '-';  
     $uuid .= substr($chars,20,12);  
-    return $uuid;  
+    return strtoupper($uuid);  
 }
 
 function V2raySocks_Convert($number, $from, $to){
