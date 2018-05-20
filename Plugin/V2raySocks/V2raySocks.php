@@ -307,6 +307,7 @@ function V2raySocks_ClientArea($params) {
             foreach($noder as $nodee){
                 $nodee = explode('|', $nodee);
                 $str = base64_encode($nodee[3] . ":" . $usage['uuid'] . "@" . $nodee[1] . ":" . $nodee[2]);
+                $str = str_replace('=','',$str);
                 $str = "vmess://" . $str . "?remarks=" . $nodee[0] . "&obfs=none";
                 $nodee[4] = $str;
                 $results[$x] = $nodee;

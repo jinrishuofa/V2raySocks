@@ -207,11 +207,11 @@ background-color: rgba(0, 0, 0, .3);
                                 <td class="hidden-xs hidden-sm">{$node[3]}</td>
                                 <td class="hidden-xs hidden-sm">{$node[2]}</td>
                                 <td data-hook="action">
-                                        <button name="qrcode" class="btn btn-primary btn-xs" data-type="vmess" "data-params="{$node[4]}">
+                                        <button name="qrcode" class="btn btn-primary btn-xs" data-type="vmess" data-params="{$node[4]|unescape:"htmlall"}">
                                             <i class="fa fa-qrcode"></i>
                                             {V2raySocks_get_lang('show_QRcode')}
                                         </button>
-                                        <button name="url" class="btn btn-primary btn-xs" data-params="{$node[4]}">
+                                        <button name="url" class="btn btn-primary btn-xs" data-params="{$node[4]|unescape:"htmlall"}">
                                             <i class="fa fa-qrcode"></i>
                                             {V2raySocks_get_lang('show_URL')}
                                         </button>
